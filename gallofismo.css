@@ -1,0 +1,185 @@
+﻿@font-face {
+    font-family: 'Minecraft';
+    src: url('Fuentes/Minecraftia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(255, 241, 183);
+    font-family: Minecraft;
+}
+
+h1 {
+    margin: 10px;
+    height: 50px;
+}
+
+header {
+    text-align: center;
+    background-color: #3e2723;
+    color: #ffcc00;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    background-color: #3e2723;
+    width: 100%;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    gap: 20px;
+    height: 24px;
+}
+
+nav a:link, nav a:visited {
+    color: rgb(255, 241, 183);
+    text-decoration: none;
+    padding: 10px 10px 6px 10px;
+}
+
+nav a:hover, nav a:active {
+    color: #3E2723;
+    background-color: rgb(255, 241, 183);
+}
+
+main {
+    margin-top: 170px;
+    margin-left: 15px;
+}
+#mainform{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#gallofa {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#gallo {
+    width: 300px;
+    margin-right: 30px;
+    margin-top: 30px;
+    height: auto;
+    float: right;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+h2{
+    margin-top: 0;
+}
+input:focus {
+    background-color: #ffff99;
+    border: 2px solid #ffcc00;
+    outline: none;
+}
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer {
+    height: 20px;
+    bottom: 0px;
+    justify-self: center;
+}
+
+.demo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    cursor:pointer;
+}
+.demo:hover{
+    opacity: 1;
+}
+video {
+    height: 700px
+}
+.mySlides{
+    height: auto;
+    width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.w3-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.w3-row-padding {
+    display: flex;
+    justify-content: center;
+    
+}
+.w3-col{
+    margin: 15px;
+}
+
+#mandamientos{
+    width: 50%;
+}
+
+.menu-sagrado{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+#cabalogo{
+    float: right;
+    height: auto;
+    width: 400px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.descripcion-bar{
+    width: 60%;
+}
+#paginacaba:hover{
+    color: brown;
+    text-decoration: none;
+}
+#paginacaba{
+    text-decoration: none;
+}
+#mapa{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+}
+
+.btn-atras{
+    position: fixed;
+    top: 76px;
+    right: 0;
+}

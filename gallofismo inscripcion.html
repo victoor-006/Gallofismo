@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet">
+    <title>El Gallofismo</title>
+    <link rel="stylesheet" href="gallofismo.css">
+    <script>
+        function ValidarGallofa(event) {
+            var continuar = true;
+            const patron = /^\d{3}-\d{2}-\d{2}-\d{2}$/;
+            if (!patron.test(document.getElementById('telefono').value) && document.getElementById('telefono').value != 0 ){
+                alert("Teléfono no válido. El formato debe ser 123-45-67-89.");
+                continuar = false;
+            }
+            return continuar;
+        }
+    </script>
+    <style>
+        td, th{
+            width: 280px;
+            padding-top: 20px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        input{
+            font-family: minecraft;
+        }
+        div{
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Web Oficial del Gallofismo</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="gallofismo.html">Origen</a></li>
+            <li><a href="gallofimso elsantuario.html">El Santuario</a></li>
+            <li><a href="gallofismo multimedia.html">Multimedia</a></li>
+            <li><a href="gallofismo inscripcion.html">Unirse al Corral</a></li>
+        </ul>
+        <a href="javascript:history.back()" class="btn-atras">Volver</a>
+    </nav>
+    <main id="mainform">
+        <section id="gallofa">
+            <h2>Inscríbete en el Corral</h2>
+            <form action="enviar.html" enctype="multipart/form-data" method="get" onsubmit="return ValidarGallofa(event)">
+               <table>
+                    <tr>
+                        <td>
+                            Nombre: 
+                        </td>
+                        <td>
+                            <input type="text" required>
+                        </td>
+                        <td>
+                            Apellidos: 
+                        </td>
+                        <td>
+                            <input type="text" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Edad: 
+                        </td>
+                        <td>
+                            <input type="number" value="18">
+                        </td>
+                        <td>
+                            Fecha Nacimiento: 
+                        </td>
+                        <td>
+                            <input type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Telefono: 
+                        </td>
+                        <td>
+                            <input type="tel" id="telefono" placeholder="123-45-67-89">
+                        </td>
+                        <td>
+                            Sexo:
+                        </td>
+                        <td>
+                            <input name="sexo" type="radio" required> Varón <input name="sexo" type="radio" disabled> Mujer
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email: 
+                        </td>
+                        <td>
+                            <input type="email" id="correo" required>
+                        </td>
+                        <td>
+                            Contraseña: 
+                        </td>
+                        <td>
+                            <input id="contraseña" type="password" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        
+                    </tr>
+                </table> 
+                <div>
+                    <input type="submit" value="Cacarear mi Fe">
+                    <input type="reset" value="Limpiar Pecados">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 El Gallofismo. Todos los derechos reservados. No se permite el consumo de pollo asado en este sitio.</p>
+    </footer>
+
+
+</body>
+</html> 
